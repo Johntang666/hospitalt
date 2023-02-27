@@ -3,7 +3,7 @@ package com.tian.config;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.crypto.hash.SimpleHash;
 /**
- * @author tianwc  唐志鹏
+ * @author tang  唐志鹏
  * @version 1.0.0
  * @description 密码处理
  * @createTime 2023年2月23日

@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.InitBinder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 /**
- * @author tianwc  唐志鹏、跳跳糖
+ * @author tang  唐志鹏、跳跳糖
  * @version 1.0.0
  * @description 日期处理
- * @createTime 2022年09月16日
  */
 public class BaseController {
     @InitBinder

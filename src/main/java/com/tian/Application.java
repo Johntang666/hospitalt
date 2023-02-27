@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author tianwc  唐志鹏
+ * @author tang  唐志鹏
  * @version 1.0.0
  * @description 项目启动类
- * @createTime 2022年09月16日 16:24
+ * @createTime 2022/2/20 16:24
  */
 @SpringBootApplication
 public class Application {

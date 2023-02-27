@@ -14,7 +14,7 @@ import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * @author tianwc  唐志鹏
+ * @author tang  唐志鹏
  * @version 1.0.0
  * @description UserRealm
  * @createTime 2023年2月23日
