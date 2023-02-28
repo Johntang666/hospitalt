@@ -13,7 +13,11 @@ import java.util.Date;
  */
 public class BaseController {
     @InitBinder
-    public void initBinder(ServletRequestDataBinder binder) {
+    /**
+     * 自定义数据绑定规则
+     * 表单到方法的数据绑定
+     */
+    public void initBinder(ServletRequestDataBinder binder) {//控制器之前执行一次
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         binder.registerCustomEditor(Date.class, new CustomDateEditor(sdf, true));
     }
