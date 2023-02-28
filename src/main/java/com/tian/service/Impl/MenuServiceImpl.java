@@ -4,6 +4,8 @@ import com.tian.entity.Menu;
 import com.tian.entity.User;
 import com.tian.mapper.MenuMapper;
 import com.tian.service.MenuService;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,16 +14,19 @@ import java.util.List;
 
 @Service
 @Transactional
+@CacheConfig(cacheNames = "login")
 public class MenuServiceImpl implements MenuService {
     @Resource
     private MenuMapper menuMapper;
 
     @Override
+    @Cacheable(key = "#loginname",unless="#result == null")
     public User loginname(String loginname) {
         return menuMapper.loginname(loginname);
     }
 
     @Override
+    @Cacheable(key = "#userid",unless="#result == null")
     public List<Menu> queryMenuByUid(Integer userid) {
         return menuMapper.queryMenuByUid(userid);
     }
