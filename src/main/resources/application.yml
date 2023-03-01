@@ -6,6 +6,6 @@ spring:
     # 端口，默认为6379
     port: 6379
     # 密码
-    password: 123
+    password: ?
     # 连接超时时间
     timeout: 10s
